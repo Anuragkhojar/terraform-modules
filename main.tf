@@ -16,7 +16,7 @@ module "ec2" {
 
 module "s3" {
   source      = "./modules/s3-bucket"
-  bucket_name = "my-demo-bucket-bkt-test"     # Change to a unique bucket name
+  bucket_name = "khojar-bucket-bkt-test"     # Change to a unique bucket name
 }
 output "instance_id" {
   value = module.ec2.instance_id
